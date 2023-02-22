@@ -1,0 +1,85 @@
+﻿@using System.Diagnostics
+@model pcBoxOrria.ViewModels.EbaluazioaViewModel
+@try
+{
+    var posizioa = 0;
+    float ebalMahiKingdom = 0, ebalZombieKiller = 0, ebalpouni = 0, ebaljohnny = 0;
+    int mahiKingdomCount = 1, zombieKillerCount = 1, pouniCount = 1, johnnyCount = 1;
+
+    foreach(var ebaluazioa in Model.EbaluazioaViewModelList)
+    {
+        if (ebaluazioa.jokua.Equals("mahiKingdom"))
+        {
+            ebalMahiKingdom = ebalMahiKingdom + @ebaluazioa.total;
+            mahiKingdomCount++;
+        }
+        if (ebaluazioa.jokua.Equals("zombieKiller"))
+        {
+            ebalZombieKiller = ebalZombieKiller + @ebaluazioa.total;
+            zombieKillerCount++;
+        }
+        if (ebaluazioa.jokua.Equals("pouni"))
+        {
+            ebalpouni = ebalpouni + @ebaluazioa.total;
+            pouniCount++;
+        }
+        if (ebaluazioa.jokua.Equals("johnny"))
+        {
+            ebaljohnny = ebaljohnny + @ebaluazioa.total;
+            johnnyCount++;
+        }
+        posizioa = posizioa + 1;
+    }
+    ebalMahiKingdom = ebalMahiKingdom / mahiKingdomCount;
+    ebalZombieKiller = ebalZombieKiller / zombieKillerCount;
+    ebalpouni = ebalpouni / pouniCount;
+    ebaljohnny = ebaljohnny / johnnyCount;
+
+
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">Mahi Kingdom<span class="text-muted"> T1 taldea</span></h2>
+            <p class="lead">Desarroilatzaileak: Hodei, Aitzol, Iker eta Markel</p>
+            <h1>@ebalMahiKingdom</h1>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="200" src="~/argazkia/t1.png" alt="Mahi Kingdom jokoaren argazkia">
+        </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">Zombie Killer<span class="text-muted"> T2 taldea</span></h2>
+            <p class="lead">Desarroilatzaileak: Adrian, Alain, Haritz eta Joseba</p>
+            <h1>@ebalZombieKiller</h1>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="200" src="~/argazkia/t2.png" alt="Zombie killer jokoaren argazkia">
+        </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">Pouni<span class="text-muted"> T3 taldea</span></h2>
+            <p class="lead">Desarroilatzaileak: Arkaitz, Karmele, Peru eta Iker</p>
+            <h1>@ebalpouni</h1>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="200" src="~/argazkia/t3.png" alt="Pouni jokoaren argazkia">
+        </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">Johnny<span class="text-muted"> T4 taldea</span></h2>
+            <p class="lead">Desarroilatzaileak: Markel, Erlantz, Peru eta Raul</p>
+            <h1>@ebaljohnny</h1>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="200" src="~/argazkia/t4.png" alt="Johnny jokoaren argazkia">
+        </div>
+    </div>
+}catch(Exception ex)
+{
+    <p>@ex.Message</p>
+}

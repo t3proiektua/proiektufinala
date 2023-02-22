@@ -1,0 +1,58 @@
+Aquí está un ejemplo de código en C# para conectarse a un servidor PostgreSQL desde Unity mediante sockets y hilos:
+using UnityEngine;
+using System.Threading;
+using Npgsql;
+
+public class DatabaseConnection : MonoBehaviour
+{
+    private string connString = "Host=localhost;Username=postgres;Password=yourpassword;Database=yourdb";
+
+    void Start()
+    {
+        Thread connectionThread = new Thread(ConnectToDatabase);
+        connectionThread.Start();
+    }
+
+    private void ConnectToDatabase()
+    {
+        using (var conn = new NpgsqlConnection(connString))
+        {
+            conn.Open();
+
+            // Realizar consultas a la base de datos aquí
+
+            conn.Close();
+        }
+    }
+}
+------------------------------------------------------------------------------------------------
+To display a DataSet in Unity, you can create a user interface to display the information in the DataSet.
+
+One way to do this would be to use the UnityEngine.UI components such as Text and Image to create a UI element for each row in the DataSet. You can create a GameObject for each row and then use the Instantiate method to create instances of the GameObject for each row in the DataSet.
+using UnityEngine;
+using UnityEngine.UI;
+using System.Data;
+
+public class DataSetDisplay : MonoBehaviour
+{
+    public GameObject rowPrefab;
+    public Transform contentParent;
+    
+    private void DisplayDataSet(DataSet dataSet)
+    {
+        DataTable dataTable = dataSet.Tables[0];
+        foreach (DataRow row in dataTable.Rows)
+        {
+            GameObject newRow = Instantiate(rowPrefab, contentParent);
+            Text[] textComponents = newRow.GetComponentsInChildren<Text>();
+            for (int i = 0; i < textComponents.Length; i++)
+            {
+                textComponents[i].text = row[i].ToString();
+            }
+        }
+    }
+}
+
+In this example, the rowPrefab is a GameObject that represents a single row in the DataSet. The contentParent is a Transform component that will act as the parent of the row GameObject instances. The DisplayDataSet method loops through each row in the DataTable and creates a new instance of the rowPrefab for each row. The GetComponentsInChildren method is used to get all of the Text components in the new GameObject and then the text of each Text component is set to the corresponding column in the row.
+
+Note that this is just one way to display a DataSet in Unity and the actual implementation may vary depending on your specific use case and requirements.

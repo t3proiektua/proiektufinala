@@ -1,0 +1,10 @@
+id: DokuPCBOX
+language: CSharp
+name:
+  Default: DokuPCBOX
+qualifiedName:
+  Default: DokuPCBOX
+type: Assembly
+modifiers: {}
+items: []
+references: {}

@@ -1,0 +1,10 @@
+C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\ReportPcBox\bin\Debug\ReportPcBox.exe.config
+C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\ReportPcBox\bin\Debug\ReportPcBox.exe
+C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\ReportPcBox\bin\Debug\ReportPcBox.pdb
+C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\ReportPcBox\obj\Debug\ReportPcBox.csproj.AssemblyReference.cache
+C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\ReportPcBox\obj\Debug\ReportPcBox.csproj.SuggestedBindingRedirects.cache
+C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\ReportPcBox\obj\Debug\ReportPcBox.Properties.Resources.resources
+C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\ReportPcBox\obj\Debug\ReportPcBox.csproj.GenerateResource.cache
+C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\ReportPcBox\obj\Debug\ReportPcBox.csproj.CoreCompileInputs.cache
+C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\ReportPcBox\obj\Debug\ReportPcBox.exe
+C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\ReportPcBox\obj\Debug\ReportPcBox.pdb

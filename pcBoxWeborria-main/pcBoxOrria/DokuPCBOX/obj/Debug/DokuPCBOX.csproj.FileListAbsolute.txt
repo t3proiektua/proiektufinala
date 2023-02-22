@@ -1,0 +1,8 @@
+C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\DokuPCBOX\bin\Debug\DokuPCBOX.exe.config
+C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\DokuPCBOX\bin\Debug\DokuPCBOX.exe
+C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\DokuPCBOX\bin\Debug\DokuPCBOX.pdb
+C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\DokuPCBOX\obj\Debug\DokuPCBOX.csproj.AssemblyReference.cache
+C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\DokuPCBOX\obj\Debug\DokuPCBOX.csproj.SuggestedBindingRedirects.cache
+C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\DokuPCBOX\obj\Debug\DokuPCBOX.csproj.CoreCompileInputs.cache
+C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\DokuPCBOX\obj\Debug\DokuPCBOX.exe
+C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\DokuPCBOX\obj\Debug\DokuPCBOX.pdb
