@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<odoo> 
+    <record id="view__jokoaren_puntuazioak_form" model="ir.ui.view"> 
+        <field name="name">partida.form</field> 
+        <field name="model">partida</field> 
+        <field name="arch" type="xml"> 
+            <form string="Jokoaren puntuazioak"> 
+                <group> 
+                    <field name="id"/> 
+                    <field name="erabiltzailea"/> 
+                    <field name="data"/>
+                    <field name="puntuazioa"/> 
+                </group> 
+            </form> 
+        </field> 
+    </record> 
+     <record id="view_tree_jokoaren_puntuazioak" model="ir.ui.view"> 
+        <field name="name">partida.tree</field> 
+        <field name="model">partida</field> 
+        <field name="arch" type="xml"> 
+           <tree> 
+                    <field name="id"/> 
+                    <field name="erabiltzailea"/> 
+                    <field name="data"/>
+                    <field name="puntuazioa"/> 
+           </tree> 
+        </field> 
+    </record> 
+    <record model="ir.actions.act_window" id="act__jokoaren_puntuazioak"> 
+        <field name="name">Puntuazioak</field> 
+        <field name="res_model">partida</field> 
+        <field name="view_mode">tree,form</field> 
+        <field name="view_id"  ref="view_tree_jokoaren_puntuazioak" /> 
+    </record> 
+<menuitem id="_jokoaren_puntuazioak_menu" name="Partida" web_icon="stock,static/description/icon.png" sequence="10"/> 
+<menuitem id="submenu__jokoaren_puntuazioak_menu" name="Partida" sequence="10" parent="_jokoaren_puntuazioak_menu"/> 
+<menuitem id="submenu__jokoaren_puntuazioak_action" name="Partida" sequence="10" parent="submenu__jokoaren_puntuazioak_menu" action="act__jokoaren_puntuazioak"/> 
+</odoo> 
